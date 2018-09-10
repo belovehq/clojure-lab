@@ -1,10 +1,11 @@
-# Portable development environment
-#
-# VERSION 0.1.0
+# A Docker container for data science with Python and Clojure
 
 FROM ubuntu:18.04
 
-MAINTAINER Nicolas Duchenne <hello@belove.co.uk>
+LABEL maintainer="Nicolas Duchenne <hello@belove.co.uk>"
+LABEL description="Data science with Python and Clojure. Includes Anaconda, BeakerX and Leiningen. Automatically starts Jupyter Lab on startup."
+LABEL version="0.1.0"
+LABEL license="CC-BY-4.0"
 
 # apt packages
 RUN apt-get update
