@@ -1,7 +1,8 @@
 # Jupyter Lab for Clojurians
 
 A Docker container for data science with Python and Clojure. 
-Includes Anaconda, BeakerX and Leiningen. 
+Includes Anaconda, BeakerX and Leiningen. Automatically starts
+Jupyter Lab on startup. 
 
 Versions at the time of writing are Ubuntu 18.04, 
 Anaconda 5.2 and BeakerX 1.1.0. 
@@ -12,8 +13,9 @@ Edit `project.clj` to include your choice of clojure
 dependencies for Leiningen.
 
 Edit/adapt the three host-side scripts to match your preferences
-of image name, port mapping, local data directory and favourite 
-browser (below: Chrome in application mode on Windows).
+of image name, jupyter lab port, port mapping, 
+local data directory and favourite browser 
+(below: Chrome in application mode on Windows).
 
 ```shell
 # docker-build.bat
