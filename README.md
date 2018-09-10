@@ -1,4 +1,4 @@
-#Jupyter Lab for Clojurians
+# Jupyter Lab for Clojurians
 
 A Docker container for data science with Python and Clojure. 
 Includes Anaconda, BeakerX and Leiningen. 
@@ -15,7 +15,7 @@ Edit/adapt the three host-side scripts to match your preferences
 of image name, port mapping, local data directory and favourite 
 browser (below: Chrome in application mode on Windows).
 
-```Dockerfile
+```shell
 # docker-build.bat
 docker build -t belove/jupyterlab . %
 
@@ -28,7 +28,7 @@ docker run -e "LAB_PORT=55000" -p 55000-55010:55000-55010 --name %1 -v %2:/root/
 
 Build, run and connect:
 
-```Dockerfile
+```shell
 # Build the image belove/jupyterlab 
 .\docker-build
 
@@ -47,7 +47,7 @@ Use `exec -ti <container> bash` on the host to start a
 new root shell session on the container and start a new 
 jupyter notebook, lab or clojure REPL:
 
-```Dockerfile
+```shell
 # start a jupyter notebook/lab or the Leiningen RPEL on port 56789
 notebook 56789
 lab 56789
